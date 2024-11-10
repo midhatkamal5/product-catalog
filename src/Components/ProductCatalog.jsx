@@ -1,7 +1,6 @@
-// src/components/ProductCatalog.js
 import React from 'react';
 import ProductCard from './ProductCard';
-import styles from './styles/catalog.module.css';
+import Catalogcss from './styles/catalog.module.css';
 
 function ProductCatalog (){
   const products = [
@@ -71,7 +70,7 @@ function ProductCatalog (){
   ];
 
   return (
-    <div className={`${styles.catalog} container`}>
+    <div className={`${Catalogcss.catalog} container`}>
       <div className="row justify-content-center">
         {products.map(product => (
           <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={product.id}>
